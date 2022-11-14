@@ -4,13 +4,13 @@ public class Yakuza extends Humain{
 	private String clan;
 	private int reputation;
 
-	public Yakuza(String nom, String boissonPref, int argent, String clan, int reputation) {
+	public Yakuza(String nom, String boissonPref, int argent, String clan) {
 		super(nom, boissonPref, argent);
 		this.clan = clan;
-		this.reputation = reputation;
+		this.reputation = 0;
 	}
 	
-	public int getReputation() { // ou protected int reputation (ligne 5)
+	public int getReputation() {
 		return reputation;
 	}
 	
